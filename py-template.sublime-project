@@ -1,0 +1,19 @@
+{
+    "folders":
+    [
+        {
+            "follow_symlinks": true,
+            "path": "."
+        }
+    ],
+    "build_systems":
+    [
+        {
+            "name": "",
+            "cmd": ["python", "-u", "$file"],
+            "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+            "working_dir": "${project_path:${folder}}",
+            "selector": "source.python"
+        }
+    ]
+}
